@@ -1,0 +1,55 @@
+/* /* img {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    display: none;
+    margin-left: 50%;
+    width: 50%;
+  }
+
+  to {
+    display: block;
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
+
+img {
+  animation-duration: 1s;  
+}
+
+#left:hover{
+  fill: rgb(136, 191, 240);
+}
+
+#right:hover{
+  fill: rgb(136, 191, 240);
+}
+
+
+.rightArrow{
+  animation-name: slideinLeft;
+}
+
+.leftArrow{
+  animation-name: slideinRight;
+}
+
+@keyframes slideinRight {
+  from {
+    transform: translate(120px);
+   
+    opacity: -100;
+  }
+}
+
+@keyframes slideinLeft {
+  from {
+    transform: translate(-120px);
+    opacity: -100;
+  }
+} 
+
